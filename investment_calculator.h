@@ -1,12 +1,13 @@
-#ifndef AIRGEAD_BANKINGAPP_INVESTMENTCALCULATOR_H //Checks if this specific header file has been defined previously. If not, it defines it.
-#define AIRGEAD_BANKINGAPP_INVESTMENTCALCULATOR_H
+#ifndef INVESTMENTCALCULATOR_H 
+#define INVESTMENTCALCULATOR_H
 
 #include <vector>
 using namespace std;
 
 class InvestmentCalculator {
-    public: //Accessible to everything which includes investment_calculator.h
+    public: 
         InvestmentCalculator(); //Function InvestmentCalculator is used to set InvestmentCalculator's default values
+	void initiateInvestmentCalculator();
         void displayScreen();
         void requestInput(double& t_variable); 
         void calculate();

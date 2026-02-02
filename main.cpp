@@ -1,11 +1,11 @@
 /*
 Created by Gabriel Barnard
-Created on the 11th of November 2025
+Updated on the 2nd of February 2026
 */
 
 // Code starts here //
 
-#include "investment_calculator.h" //Imports the required header file.
+#include "investment_calculator.h" 
 
 #include <memory>
 using namespace std;
@@ -13,10 +13,5 @@ using namespace std;
 int main() {
     auto calc = make_unique<InvestmentCalculator>(); //Creates the object calc
     
-    //Neccessary functions to run the program
-    calc->displayScreen();
-    calc->calculate();
-    calc->displayResults(0); //Excluding monthly deposits (0)
-    calc->calculateWithMonthlyDeposits();
-    calc->displayResults(1); //Including monthly deposits (1)
+    calc->initiateInvestmentCalculator();
 }
